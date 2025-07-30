@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+}
+body{
+    background-color: #fff;
+}
+.container{
+max-width: 1340px;
+margin: auto;
+padding: 20px;
+overflow: hidden;
+}
+.flex{
+    display: flex;
+    align-items: center;
+}
+p{ 
+    
+    color: #555252;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+li{
+    list-style: none;
+    
+}
+.btn{
+    background-color: blue;
+    color: #fff;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 10px;
+}
+.btn:hover{
+    background-color: rgb(61, 61, 225);
+}
+.link:hover{
+    transition: 0.5s ease-in-out;
+    color: blue;
+    border-bottom: 2px solid blue;
+}
+.navBar{
+    justify-content: space-between;
+    padding-inline-end: 50px;
+}
+.logo img {
+   width: 50%;
+   padding: 10px;
+   color: #fff;
+}
+.navLinks ul{
+    
+    gap: 40px;
+}
+
+
+/* hero section */
+
+
+.heroSection{
+  gap: 20px;
+  flex-wrap: wrap-reverse;
+}
+.heroText{
+    flex-direction: column;
+    gap: 20px;
+    text-align: left;
+    justify-content: left;
+    flex: 1;
+    align-items: flex-start; /* Aligns child items to the left */
+      
+}
+.heroText h2{
+    font-size: 3rem;
+}
+.heroImage{
+    flex: 1;
+}
+.heroImage img{
+    width: 100%;
+}
+
+/* company logo section */
+
+.companySection{
+    flex-direction: column;
+    gap: 50px;
+    margin-inline: 50px;
+}
+.companyLogo{
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.companyLogo img{
+  max-width: 150px;
+
+}
+
+/* feature section */
+
+.featureSection{
+    flex-direction: column;
+    gap: 40px;
+    margin-bottom: 50px;
+}
+.sec_btn{
+    background-color: #fff;
+    color: #000;
+    padding: 10px;
+    border: 2px solid black;
+    font-size: 1rem;
+    border-radius: 10px;
+}
+
+/* cards section  */
+
+.cardsSection{
+    flex-wrap: wrap;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+}
+.cards{
+    flex-direction: column;
+    gap: 30px;
+    width: calc(33.33% - 40px);
+}
+.cards img{
+    max-width: 100px;
+}
+.cards p{
+    text-align: center;
+}
