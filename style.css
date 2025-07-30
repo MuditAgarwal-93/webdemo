@@ -40,6 +40,17 @@ li{
 .btn:hover{
     background-color: rgb(61, 61, 225);
 }
+.sec_btn{
+    background-color: #fff;
+    color: #000;
+    padding: 10px;
+    border: 2px solid black;
+    font-size: 1rem;
+    border-radius: 10px;
+}
+.sec_btn:hover{
+    background-color: gray;
+}
 .link:hover{
     transition: 0.5s ease-in-out;
     color: blue;
@@ -50,7 +61,7 @@ li{
     padding-inline-end: 50px;
 }
 .logo img {
-   width: 50%;
+   max-width: 60%;
    padding: 10px;
    color: #fff;
 }
@@ -91,7 +102,7 @@ li{
 .companySection{
     flex-direction: column;
     gap: 50px;
-    margin-inline: 50px;
+    margin-block: 50px;
 }
 .companyLogo{
     gap: 20px;
@@ -99,8 +110,12 @@ li{
     justify-content: center;
 }
 .companyLogo img{
-  max-width: 150px;
+  max-width: 75px;
 
+}
+.companyText{
+    justify-content: center;
+    text-align: center;
 }
 
 /* feature section */
@@ -110,18 +125,14 @@ li{
     gap: 40px;
     margin-bottom: 50px;
 }
-.sec_btn{
-    background-color: #fff;
-    color: #000;
-    padding: 10px;
-    border: 2px solid black;
-    font-size: 1rem;
-    border-radius: 10px;
+.featureSection h2{
+    text-align: center;
 }
 
 /* cards section  */
 
 .cardsSection{
+    display: flex;
     flex-wrap: wrap;
     gap: 40px;
     align-items: center;
@@ -131,10 +142,127 @@ li{
     flex-direction: column;
     gap: 30px;
     width: calc(33.33% - 40px);
+    padding: 20px;
+    border-radius: 15px;
 }
 .cards img{
     max-width: 100px;
 }
 .cards p{
     text-align: center;
+}
+.cards:hover{
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+/* more features section */
+
+.moreFeaturesSection{
+    flex-direction: column;
+    gap: 50px;
+    margin-bottom: 50px;
+}
+ .featureContainer{
+    gap: 40px;
+ }
+ .featureContainer img{
+    width: 100%;
+ }
+ .featureText{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1024px) {
+    .cards {
+        width: calc(50% - 40px);
+    }
+    .heroText h2{
+    font-size: 2rem;
+}
+}
+
+
+@media (max-width: 600px) {
+    .cards {
+        width: 100%;
+    }
+    .featureContainer{
+        flex-direction: column;
+    }
+    .heroText{
+        align-items: center;
+        text-align: center;
+    }
+    .heroText button{
+        width: 70%;
+    }
+    .heroText h2{
+    font-size: 2rem;
+}
+.heroSection{
+    flex-direction: column-reverse;
+    gap: 50px;
+    text-align: center;
+}
+.specialCase{
+    flex-direction: column-reverse;
+}
 }
